@@ -3,4 +3,4 @@ This is the implementation of the paper "Peripheral Vision Transformer" by Juhon
 
 The code will be made available soon.
 
-For more information, check out project [[website](http://cvlab.postech.ac.kr/research/HSNet/)] and the paper on [[arXiv](https://arxiv.org/abs/2206.06801)].
+For more information, check out project [[website](https://cvlab.postech.ac.kr/research/PerViT/)] and the paper on [[arXiv](https://arxiv.org/abs/2206.06801)].
