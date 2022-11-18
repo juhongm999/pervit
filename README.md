@@ -51,11 +51,11 @@ To train PerViT-{T, S, M} on ImageNet-1K on a single node with 8 gpus for 300 ep
 >                                    --use_env main.py
 >                                    --batch-size 128
 >                                    --model pervit_{tiny, small, medium}
->                                    --weight_decay {0.03, 0.05, 0.05}
->                                    --warmup_epochs {5, 5, 20}
->                                    --drop_path {0.0, 0.1, 0.2}
->                                    --data_set IMNET
->                                    --data_path /path/to/imagenet
+>                                    --weight-decay {0.03, 0.05, 0.05}
+>                                    --warmup-epochs {5, 5, 20}
+>                                    --drop-path {0.0, 0.1, 0.2}
+>                                    --data-set IMNET
+>                                    --data-path /path/to/imagenet
 >                                    --output_dir /path/to/output_dir
 > ```
 
@@ -65,7 +65,7 @@ To evaluate PerViT-{T, S, M} on ImageNet-1K test set, run:
 > ```bash
 > python main.py --eval --pretrained 
 >                --model pervit_{tiny, small, medium}
->                --data_set IMNET
+>                --data-set IMNET
 >                --data-path /path/to/imagenet
 >                --load /path/to/pretrained_model
 >                --output_dir /path/to/output_dir
