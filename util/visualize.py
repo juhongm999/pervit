@@ -64,7 +64,7 @@ def save_attention(attn, savepath, q):
     axes = figure.add_subplot(111)
     axes.set_axis_off()
 
-    if (attn - attn).sum() == 0:
+    if (attn - attn[0]).sum() == 0:  # handle exception (pervit_medium layer 5)
         caxes = axes.matshow(attn, interpolation ='nearest', vmin=0.0, vmax=1.0)
     else:
         caxes = axes.matshow(attn, interpolation ='nearest')
